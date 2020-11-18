@@ -1,0 +1,23 @@
+{
+  "name": "user-blog-test-automation",
+  "version": "1.0.0",
+  "description": "Test Automation for Blog APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Amal Paul",
+  "license": "ISC",
+  "dependencies": {
+    "asyncawait": "^3.0.0",
+    "chai": "3.5.0",
+    "handlebars": "^4.0.11",
+    "request-promise": "4.2.1",
+    "yargs": "^16.1.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0-rc.0",
+    "async": "1.5.2",
+    "cucumber-html-reporter": "^5.2.0"
+  }
+}
