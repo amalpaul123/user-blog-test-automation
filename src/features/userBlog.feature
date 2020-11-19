@@ -3,10 +3,8 @@
 Feature: To test the blogging functionality
 
   @SubTest
-  Scenario Outline: Verify that the blogging feature workflow is working as expected
+  Scenario: Verify that the blogging feature workflow is working as expected
 
-    Given the userId is fetched successfully for the username <userName>
-    Then the posts by the user <userName> are fetched successfuly
-    Examples:
-    | userName    | statusCode |
-    | Delphine    | 200        |
+    Given the userId is fetched successfully for the user with username as Delphine
+    And the posts are fetched successfully for the user using the userId
+    And validate if the emails in the comment section are in the proper format for each post
