@@ -4,7 +4,7 @@
   "description": "Test Automation for Blog APIs",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js test/features/*.feature -f json:test/report/cucumber_report.json",
+    "test": "npx cucumber-js test/features/*.feature -f json:test/report/cucumber_report.json && node test/utils/reportGenerator",
     "report-generator": "node test/utils/reportGenerator",
     "test-1": "npm run test && npm run report-generator"
   },
