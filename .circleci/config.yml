@@ -4,6 +4,5 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test 
-  version: 13.11.0
-      - node/report-generator
+      - node/test:
+          test_results_path: /home/circleci/project/test/report/cucumber_report.html 
