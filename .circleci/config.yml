@@ -4,5 +4,6 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test:
-          test_results_path: /home/circleci/project/test/report/cucumber_report.html 
+      - node/regression-test:
+          store_test_results:
+            path: /home/circleci/project/test/report/cucumber_report.html 
