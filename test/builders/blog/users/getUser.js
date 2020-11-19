@@ -1,4 +1,4 @@
-const helperBuilder = require('../../builder-helper');
+const helperBuilder = require('../../builderHelper');
 const path = require('path');
 
 const getUser = async (userId) => {

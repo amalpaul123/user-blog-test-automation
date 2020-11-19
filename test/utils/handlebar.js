@@ -3,8 +3,8 @@ const fileReader = require('./fileReader');
 
 
 function getRenderedTemplate(dir, template, data) {
-  const src = fileReader.readFile(dir, template);
-  var template = handlebars.compile(src, {strict: true});
+  const test = fileReader.readFile(dir, template);
+  var template = handlebars.compile(test, {strict: true});
   return template(data);
 }
 

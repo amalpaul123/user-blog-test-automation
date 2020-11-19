@@ -1,12 +1,13 @@
-const helperBuilder = require('../../builder-helper');
+
+const helperBuilder = require('../../builderHelper');
 const path = require('path');
 
 global.__baseDir = path.resolve(__dirname, '../..');
 global.__templateDir = path.resolve(__dirname, '../templates/requests');
 
-const getUserByParam = async (queryParam) => {
-    let url = `https://jsonplaceholder.typicode.com/users?${queryParam.key}=${queryParam.value}`;
-
+const getUsers = async () => {
+    let url = `https://jsonplaceholder.typicode.com/users`;
+    console.log("inside get users ************");
     let reqOpts = {
         url: url,
         method: "GET",
@@ -15,9 +16,13 @@ const getUserByParam = async (queryParam) => {
         },
         rejectUnauthorized: false
     };
-    
+
     return await helperBuilder.invoke(reqOpts);
+
+
 }
+
+
 module.exports = {
-    getUserByParam
+    getUsers
 };

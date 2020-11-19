@@ -1,4 +1,4 @@
-const helperBuilder = require('../../builder-helper');
+const helperBuilder = require('../../builderHelper');
 const hbr = require('../../../utils/handlebar')
 
 const getCommentsByParam = async (queryParam) => {

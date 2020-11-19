@@ -1,11 +1,11 @@
-const helperBuilder = require('../../builder-helper');
+const helperBuilder = require('../../builderHelper');
 const path = require('path');
 
 global.__baseDir = path.resolve(__dirname, '../..');
 global.__templateDir = path.resolve(__dirname, '../templates/requests');
 
-const getPostsByParam = async (queryParam) => {
-    let url = `https://jsonplaceholder.typicode.com/posts?${queryParam.key}=${queryParam.value}`;
+const getUserByParam = async (queryParam) => {
+    let url = `https://jsonplaceholder.typicode.com/users?${queryParam.key}=${queryParam.value}`;
 
     let reqOpts = {
         url: url,
@@ -15,8 +15,9 @@ const getPostsByParam = async (queryParam) => {
         },
         rejectUnauthorized: false
     };
+    
     return await helperBuilder.invoke(reqOpts);
 }
 module.exports = {
-    getPostsByParam
+    getUserByParam
 };

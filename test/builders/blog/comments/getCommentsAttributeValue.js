@@ -1,4 +1,4 @@
-const helperBuilder = require('../../builder-helper');
+const helperBuilder = require('../../builderHelper');
 const path = require('path');
 
 global.__baseDir = path.resolve(__dirname, '../..');

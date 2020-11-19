@@ -1,0 +1,77 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "to-test-the-blogging-functionality;verify-that-the-blogging-feature-workflow-is-working-as-expected",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify that the blogging feature workflow is working as expected",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the userId is fetched successfully with status code 200 for the user with username as Delphine",
+            "match": {
+              "location": "test/features/step_definitions/steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the posts are fetched successfully with status code 200 for the user using the userId",
+            "match": {
+              "location": "test/features/step_definitions/steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "get comments successfully with status code 200 and validate if the emails in the comment section are in the proper format for each post",
+            "match": {
+              "location": "test/features/step_definitions/steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 513000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 1
+          },
+          {
+            "name": "@SubTest",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "to-test-the-blogging-functionality",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "To test the blogging functionality",
+    "tags": [
+      {
+        "name": "@Sanity",
+        "line": 1
+      }
+    ],
+    "uri": "test/features/userBlog.feature"
+  }
+]
