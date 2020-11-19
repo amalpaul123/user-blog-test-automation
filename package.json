@@ -6,8 +6,7 @@
   "scripts": {
     "test": "npx cucumber-js test/features/*.feature -f json:test/report/cucumber_report.json",
     "report-generator": "node test/utils/reportGenerator",
-    "test-1":"npm run test && npm run report-generator"
-
+    "test-1": "npm run test && npm run report-generator"
   },
   "author": "Amal Paul",
   "license": "ISC",
@@ -15,6 +14,7 @@
     "asyncawait": "^3.0.0",
     "chai": "3.5.0",
     "handlebars": "^4.0.11",
+    "request": "^2.88.2",
     "request-promise": "4.2.1",
     "yargs": "^16.1.1"
   },
