@@ -39,7 +39,6 @@ jobs:
         name: Run NPM Tests
         working_directory: ~/project
   generate_report:
-    executor: windows/default
     steps:
     - run:
         command: npm run report-generator
