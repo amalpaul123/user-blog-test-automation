@@ -1,7 +1,7 @@
 
-const user = require('../../builders/blog/users/user');
-const post = require('../../builders/blog/posts/post');
-const comments = require('../../builders/blog/comments/comments');
+const user = require('../../builders/request/blog/users/user');
+const post = require('../../builders/request/blog/posts/post');
+const comments = require('../../builders/request/blog/comments/comment');
 const emailValidation = require('../../common/emailValidation');
 const uniqueField = require('../../common/getUniqueField');
 const helper = require('../../utils/helper')
@@ -24,9 +24,9 @@ Given(/^the userId is fetched successfully with status code (.*) for the user wi
 
 }
 catch(e){
-  error =true;
+  error = e;
 }
-expect(error).to.be.deep.equal(false, 'error at this step');
+expect(error,`error thrown at this step: ${error}`).to.be.false;
 
 helper.setGlobalVariable('userId',JSON.parse(apiResponse.body)[0].id);
 
@@ -45,9 +45,9 @@ Given(/^the posts are fetched successfully with status code (.*) for the user us
 
 }
 catch(e){
-  error =true;
+  error = e;
 }
-expect(error).to.be.deep.equal(false, 'error at this step');
+expect(error,`error thrown at this step: ${error}`).to.be.false;
 
 helper.setGlobalVariable('posts',JSON.parse(apiResponse.body));
 
@@ -76,9 +76,9 @@ Given(/^validate if the emails in the comment section fetched successfully with 
   expect(apiResponse.statusCode).to.be.deep.equal(JSON.parse(statusCode), 'API returned invalid response');
 }
 catch(e){
-  error =true;
+  error = e;
 }
-expect(error).to.be.deep.equal(false, 'error at this step');
+expect(error,`error thrown at this step: ${error}`).to.be.false;
 });
 
 
@@ -94,10 +94,9 @@ Given(/^a request is made to users endpoint with (.*) as (.*)$/, async  (key,val
   apiResponse = await user.getUserByParam(queryParam);
 }
 catch(e){
-  error =true;
-  console.log("error",e);
+  error = e;
 }
-expect(error).to.be.deep.equal(false, 'error at this step');
+expect(error,`error thrown at this step: ${error}`).to.be.false;
 helper.setGlobalVariable('apiResponse',apiResponse);
 
 });
@@ -113,9 +112,9 @@ Given(/^a request is made to posts endpoint with (.*) as (.*)$/, async  (key,val
   apiResponse = await post.getPostsByParam(queryParam);
 }
 catch(e){
-  error =true;
+  error = e;
 }
-expect(error).to.be.deep.equal(false, 'error at this step');
+expect(error,`error thrown at this step: ${error}`).to.be.false;
 helper.setGlobalVariable('apiResponse',apiResponse);
 
 });
@@ -131,9 +130,10 @@ Given(/^a request is made to comments endpoint with (.*) as (.*)$/, async  (key,
   apiResponse = await comments.getCommentsByParam(queryParam);
 }
 catch(e){
-  error =true;
+  error = e;
 }
-expect(error).to.be.deep.equal(false, 'error at this step');
+expect(error,`error thrown at this step: ${error}`).to.be.false;
+
 helper.setGlobalVariable('apiResponse',apiResponse);
 
 });

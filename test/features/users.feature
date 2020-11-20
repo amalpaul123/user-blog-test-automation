@@ -2,7 +2,7 @@
 
 Feature: To test the users endpoint
 
-  @Sanity2 @Users
+  @Sanity @Users
   Scenario Outline: Verify that user enpoint gives success response
 
     Given a request is made to users endpoint with <filter> as <value>

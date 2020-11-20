@@ -2,7 +2,7 @@
 
 Feature: To test the posts endpoint
       
-  @Sanity1 @Users
+  @Sanity @Users
   Scenario Outline: Verify that the post enpoint gives success response 
 
     Given a request is made to posts endpoint with <filter> as <value>
