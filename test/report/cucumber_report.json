@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 135000000
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56000000
+              "duration": 77000000
             }
           },
           {
@@ -44,9 +44,8 @@
               "location": "test/features/step_definitions/steps.js:56"
             },
             "result": {
-              "status": "failed",
-              "duration": 69000000,
-              "error_message": "AssertionError: error at this step: expected true to deeply equal false\n    + expected - actual\n\n    -true\n    +false\n\n    at Assertion.assertEqual (/Docs/mob/user-blog-test-automation/node_modules/chai/lib/chai/core/assertions.js:485:19)\n    at Assertion.ctx.<computed> [as equal] (/Docs/mob/user-blog-test-automation/node_modules/chai/lib/chai/utils/addMethod.js:41:25)\n    at World.<anonymous> (/Docs/mob/user-blog-test-automation/test/features/step_definitions/steps.js:81:26)"
+              "status": "passed",
+              "duration": 674000000
             }
           }
         ],
@@ -95,11 +94,11 @@
             "line": 9,
             "name": "a request is made to comments endpoint with postId as 1",
             "match": {
-              "location": "test/features/step_definitions/steps.js:125"
+              "location": "test/features/step_definitions/steps.js:122"
             },
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 72000000
             }
           },
           {
@@ -108,11 +107,11 @@
             "line": 10,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -141,11 +140,11 @@
             "line": 20,
             "name": "a request is made to comments endpoint with postId as 1",
             "match": {
-              "location": "test/features/step_definitions/steps.js:125"
+              "location": "test/features/step_definitions/steps.js:122"
             },
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 52000000
             }
           },
           {
@@ -154,20 +153,7 @@
             "line": 21,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "I should get a non empty array",
-            "match": {
-              "location": "test/features/step_definitions/steps.js:153"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -177,10 +163,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "the reponse should consist of mandatory field id",
+            "line": 22,
+            "name": "I should get a non empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:150"
             },
             "result": {
               "status": "passed",
@@ -190,10 +176,23 @@
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 23,
+            "name": "the reponse should consist of mandatory field id",
+            "match": {
+              "location": "test/features/step_definitions/steps.js:155"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 24,
             "name": "the reponse should consist of mandatory field postId",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:155"
             },
             "result": {
               "status": "passed",
@@ -206,7 +205,7 @@
             "line": 25,
             "name": "the reponse should consist of mandatory field email",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:155"
             },
             "result": {
               "status": "passed",
@@ -239,11 +238,11 @@
             "line": 35,
             "name": "a request is made to comments endpoint with postId as a",
             "match": {
-              "location": "test/features/step_definitions/steps.js:125"
+              "location": "test/features/step_definitions/steps.js:122"
             },
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 60000000
             }
           },
           {
@@ -252,11 +251,11 @@
             "line": 36,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -265,11 +264,11 @@
             "line": 37,
             "name": "I should get an empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:148"
+              "location": "test/features/step_definitions/steps.js:145"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -298,11 +297,11 @@
             "line": 48,
             "name": "a request is made to comments endpoint with dummy as 1",
             "match": {
-              "location": "test/features/step_definitions/steps.js:125"
+              "location": "test/features/step_definitions/steps.js:122"
             },
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 114000000
             }
           },
           {
@@ -311,7 +310,7 @@
             "line": 49,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -324,7 +323,7 @@
             "line": 50,
             "name": "I should get a non empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:153"
+              "location": "test/features/step_definitions/steps.js:150"
             },
             "result": {
               "status": "passed",
@@ -373,11 +372,11 @@
             "line": 8,
             "name": "a request is made to posts endpoint with userId as 1",
             "match": {
-              "location": "test/features/step_definitions/steps.js:107"
+              "location": "test/features/step_definitions/steps.js:104"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 60000000
             }
           },
           {
@@ -386,7 +385,7 @@
             "line": 9,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -423,11 +422,11 @@
             "line": 19,
             "name": "a request is made to posts endpoint with userId as 1",
             "match": {
-              "location": "test/features/step_definitions/steps.js:107"
+              "location": "test/features/step_definitions/steps.js:104"
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 58000000
             }
           },
           {
@@ -436,20 +435,7 @@
             "line": 20,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "I should get a non empty array",
-            "match": {
-              "location": "test/features/step_definitions/steps.js:153"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -459,10 +445,23 @@
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 21,
+            "name": "I should get a non empty array",
+            "match": {
+              "location": "test/features/step_definitions/steps.js:150"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 22,
             "name": "the reponse should consist of mandatory field userId",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:155"
             },
             "result": {
               "status": "passed",
@@ -475,11 +474,11 @@
             "line": 23,
             "name": "the reponse should consist of mandatory field id",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:155"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -508,11 +507,11 @@
             "line": 33,
             "name": "a request is made to posts endpoint with userId as a",
             "match": {
-              "location": "test/features/step_definitions/steps.js:107"
+              "location": "test/features/step_definitions/steps.js:104"
             },
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 55000000
             }
           },
           {
@@ -521,7 +520,7 @@
             "line": 34,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -534,7 +533,7 @@
             "line": 35,
             "name": "I should get an empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:148"
+              "location": "test/features/step_definitions/steps.js:145"
             },
             "result": {
               "status": "passed",
@@ -567,7 +566,7 @@
             "line": 45,
             "name": "a request is made to users endpoint with dummy as 1",
             "match": {
-              "location": "test/features/step_definitions/steps.js:88"
+              "location": "test/features/step_definitions/steps.js:85"
             },
             "result": {
               "status": "passed",
@@ -580,7 +579,7 @@
             "line": 46,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -593,11 +592,11 @@
             "line": 47,
             "name": "I should get a non empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:153"
+              "location": "test/features/step_definitions/steps.js:150"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -642,11 +641,11 @@
             "line": 8,
             "name": "a request is made to users endpoint with username as Delphine",
             "match": {
-              "location": "test/features/step_definitions/steps.js:88"
+              "location": "test/features/step_definitions/steps.js:85"
             },
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 54000000
             }
           },
           {
@@ -655,7 +654,7 @@
             "line": 9,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -692,11 +691,11 @@
             "line": 19,
             "name": "a request is made to users endpoint with username as Delphine",
             "match": {
-              "location": "test/features/step_definitions/steps.js:88"
+              "location": "test/features/step_definitions/steps.js:85"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 57000000
             }
           },
           {
@@ -705,11 +704,11 @@
             "line": 20,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -718,7 +717,7 @@
             "line": 21,
             "name": "I should get a non empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:153"
+              "location": "test/features/step_definitions/steps.js:150"
             },
             "result": {
               "status": "passed",
@@ -731,7 +730,7 @@
             "line": 22,
             "name": "the reponse should consist of mandatory field username",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:155"
             },
             "result": {
               "status": "passed",
@@ -744,7 +743,7 @@
             "line": 23,
             "name": "the reponse should consist of mandatory field id",
             "match": {
-              "location": "test/features/step_definitions/steps.js:158"
+              "location": "test/features/step_definitions/steps.js:155"
             },
             "result": {
               "status": "passed",
@@ -777,11 +776,11 @@
             "line": 33,
             "name": "a request is made to users endpoint with username as Dummy",
             "match": {
-              "location": "test/features/step_definitions/steps.js:88"
+              "location": "test/features/step_definitions/steps.js:85"
             },
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 1079000000
             }
           },
           {
@@ -790,11 +789,11 @@
             "line": 34,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -803,11 +802,11 @@
             "line": 35,
             "name": "I should get an empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:148"
+              "location": "test/features/step_definitions/steps.js:145"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -836,11 +835,11 @@
             "line": 46,
             "name": "a request is made to users endpoint with dummy as Delphine",
             "match": {
-              "location": "test/features/step_definitions/steps.js:88"
+              "location": "test/features/step_definitions/steps.js:85"
             },
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 112000000
             }
           },
           {
@@ -849,7 +848,7 @@
             "line": 47,
             "name": "I should get status code 200 correctly",
             "match": {
-              "location": "test/features/step_definitions/steps.js:143"
+              "location": "test/features/step_definitions/steps.js:140"
             },
             "result": {
               "status": "passed",
@@ -862,11 +861,11 @@
             "line": 48,
             "name": "I should get a non empty array",
             "match": {
-              "location": "test/features/step_definitions/steps.js:153"
+              "location": "test/features/step_definitions/steps.js:150"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
