@@ -1,4 +1,4 @@
-# auto1-test-automation-selenium-bdd
+# user-blog-test-automation
 
 # Project Summary
 
