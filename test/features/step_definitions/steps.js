@@ -95,6 +95,7 @@ Given(/^a request is made to users endpoint with (.*) as (.*)$/, async  (key,val
 }
 catch(e){
   error =true;
+  console.log("error",e);
 }
 expect(error).to.be.deep.equal(false, 'error at this step');
 helper.setGlobalVariable('apiResponse',apiResponse);

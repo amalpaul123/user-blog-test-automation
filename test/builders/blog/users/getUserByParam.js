@@ -1,8 +1,5 @@
 const helperBuilder = require('../../builderHelper');
-const path = require('path');
-
-global.__baseDir = path.resolve(__dirname, '../..');
-global.__templateDir = path.resolve(__dirname, '../templates/requests');
+const hbr = require('../../../utils/handlebar')
 
 const getUserByParam = async (queryParam) => {
     let url = `https://jsonplaceholder.typicode.com/users?${queryParam.key}=${queryParam.value}`;

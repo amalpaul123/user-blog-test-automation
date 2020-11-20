@@ -5,5 +5,6 @@ workflows:
   node-tests:
     jobs:
       - node/test 
-  version: 13.11.0
-    
+      - store_test_results:
+          path: test_results
+
