@@ -38,8 +38,18 @@ jobs:
         command: npm run test
         name: Run NPM Tests
         working_directory: ~/project
+  generate_report:
+    executor: windows/default
+    steps:
+    - run:
+        command: npm run report-generator
+        name: Run NPM report generator
+        working_directory: ~/project
+    - store_test_results:
+        path: /home/circleci/project/test/report/cucumber_report.html
 workflows:
   node-tests:
     jobs:
     - node/test
+    - generate_report
   version: 2
