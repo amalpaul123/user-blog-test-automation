@@ -3,7 +3,7 @@
 Feature: To test the comments endpoint
 
 
-  @Sanity
+  @Sanity @Comments
   Scenario Outline: Verify that the comments endpoint gives success response
 
     Given a request is made to comments endpoint with <filter> as <value>

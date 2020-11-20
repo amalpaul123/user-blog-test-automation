@@ -6,8 +6,8 @@ const getUniqueField = async (fields,value) => {
         values.push(field[value]);
     }
     return values;
-   
-}
+
+};
 module.exports = {
     getUniqueField
 };
