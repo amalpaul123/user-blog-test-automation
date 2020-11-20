@@ -38,8 +38,6 @@ jobs:
         command: npm run test
         name: Run NPM Tests
         working_directory: ~/project
-  generate_report:
-    steps:
     - run:
         command: npm run report-generator
         name: Run NPM report generator
@@ -50,5 +48,4 @@ workflows:
   node-tests:
     jobs:
     - node/test
-    - generate_report
   version: 2
