@@ -53,7 +53,9 @@ After execution, the test report can be found at
 -```"test\report\cucumber_report.json"```
 ![ScreenShot](https://gist.githubusercontent.com/amalpaul123/38d9eedb603ef4ad790f4bd27e030cfc/raw/983d48c7dd413bec7916e10548df88fb47b444cc/test-report-blog.png)
 
+- It can be found in CircleCI artefacts [Test_Report](https://app.circleci.com/pipelines/github/amalpaul123/user-blog-test-automation/33/workflows/57c070d5-fa63-4b41-8e2b-76a4697bf8dc/jobs/37/artifacts) after job execution.
 ## CircleCI pipeline: 
 - This repository is integrated with circleCI tool for continous integration
 [circleCI Job](https://app.circleci.com/pipelines/github/amalpaul123/user-blog-test-automation)
-![ScreenShot](https://gist.githubusercontent.com/amalpaul123/38d9eedb603ef4ad790f4bd27e030cfc/raw/983d48c7dd413bec7916e10548df88fb47b444cc/circleCI-pipeline.png)
+
+![ScreenShot](https://gist.githubusercontent.com/amalpaul123/38d9eedb603ef4ad790f4bd27e030cfc/raw/07bad980c33e7c02a64d40576cca672f1438ecff/cirlceCI-pipeline2.png)
