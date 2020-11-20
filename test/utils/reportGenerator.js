@@ -7,7 +7,7 @@ var options = {
         output: `${__baseDir}/test/report/cucumber_report.html`,
         reportSuiteAsScenarios: true,
         scenarioTimestamp: true,
-        launchReport: true,
+        launchReport: true
     };
 
 reporter.generate(options);

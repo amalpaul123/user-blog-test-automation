@@ -1,6 +1,6 @@
 const request = require('../../requestBuilderHelper');
-const hbr = require('../../../../utils/handlebar')
-const url = require('../../../../config/config.json').url
+const hbr = require('../../../../utils/handlebar');
+const url = require('../../../../config/config.json').url;
 
 const getCommentsByParam = async (queryParam) => {
 
@@ -9,9 +9,9 @@ const getCommentsByParam = async (queryParam) => {
     let inpForTemplate = {
         uri: uri
     };
-    const reqOpts = JSON.parse(hbr.getRenderedTemplate(__templateDir,"get.hbs", inpForTemplate));
+    const reqOpts = JSON.parse(hbr.getRenderedTemplate(__templateDir,'get.hbs', inpForTemplate));
     return await request.invoke(reqOpts);
-}
+};
 
 const getCommentById = async (id) => {
 
@@ -20,9 +20,9 @@ const getCommentById = async (id) => {
     let inpForTemplate = {
         uri: uri
     };
-    const reqOpts = JSON.parse(hbr.getRenderedTemplate(__templateDir,"get.hbs", inpForTemplate));
+    const reqOpts = JSON.parse(hbr.getRenderedTemplate(__templateDir,'get.hbs', inpForTemplate));
     return await request.invoke(reqOpts);
-}
+};
 
 module.exports = {
     getCommentsByParam,getCommentById

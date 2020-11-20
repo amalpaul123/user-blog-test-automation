@@ -4,7 +4,7 @@ const post = require('../../builders/request/blog/posts/post');
 const comments = require('../../builders/request/blog/comments/comment');
 const emailValidation = require('../../common/emailValidation');
 const uniqueField = require('../../common/getUniqueField');
-const helper = require('../../utils/helper')
+const helper = require('../../utils/helper');
 var chai = require('chai');
 var expect = chai.expect;
 var {Given} = require('@cucumber/cucumber');
@@ -17,13 +17,12 @@ Given(/^the userId is fetched successfully with status code (.*) for the user wi
 
   let queryParam ={
     key: key,
-    value:value,
-  }
+    value:value
+  };
   apiResponse = await user.getUserByParam(queryParam);
   expect(apiResponse.statusCode).to.be.deep.equal(JSON.parse(statusCode), 'API returned invalid response');
 
-}
-catch(e){
+} catch(e){
   error = e;
 }
 expect(error,`error thrown at this step: ${error}`).to.be.false;
@@ -37,14 +36,13 @@ Given(/^the posts are fetched successfully with status code (.*) for the user us
 
   try{
   let queryParam ={
-    key: "userId",
-    value: helper.getGlobalVariable('userId'),
-  }
+    key: 'userId',
+    value: helper.getGlobalVariable('userId')
+  };
    apiResponse = await post.getPostsByParam(queryParam);
    expect(apiResponse.statusCode).to.be.deep.equal(JSON.parse(statusCode), 'API returned invalid response');
 
-}
-catch(e){
+} catch(e){
   error = e;
 }
 expect(error,`error thrown at this step: ${error}`).to.be.false;
@@ -59,23 +57,22 @@ Given(/^validate if the emails in the comment section fetched successfully with 
   try{
 
   let posts = helper.getGlobalVariable('posts');
-  let queryParam ={}; 
+  let queryParam ={};
 
   for (const post of posts){
     queryParam={
-      key: "postId",
-      value: post.id,
-    }
+      key: 'postId',
+      value: post.id
+    };
     apiResponse =  await comments.getCommentsByParam(queryParam);
-    let emails = await uniqueField.getUniqueField(JSON.parse(apiResponse.body),"email");
+    let emails = await uniqueField.getUniqueField(JSON.parse(apiResponse.body),'email');
        for(const email of emails){
         expect(email).to.be.a('string');
         expect(emailValidation.validate(email)).to.be.true;
        }
   }
   expect(apiResponse.statusCode).to.be.deep.equal(JSON.parse(statusCode), 'API returned invalid response');
-}
-catch(e){
+} catch(e){
   error = e;
 }
 expect(error,`error thrown at this step: ${error}`).to.be.false;
@@ -89,11 +86,10 @@ Given(/^a request is made to users endpoint with (.*) as (.*)$/, async  (key,val
 
   let queryParam ={
     key: key,
-    value:value,
-  }
+    value:value
+  };
   apiResponse = await user.getUserByParam(queryParam);
-}
-catch(e){
+} catch(e){
   error = e;
 }
 expect(error,`error thrown at this step: ${error}`).to.be.false;
@@ -107,11 +103,10 @@ Given(/^a request is made to posts endpoint with (.*) as (.*)$/, async  (key,val
   try{
   let queryParam ={
     key: key,
-    value:value,
-  }
+    value:value
+  };
   apiResponse = await post.getPostsByParam(queryParam);
-}
-catch(e){
+} catch(e){
   error = e;
 }
 expect(error,`error thrown at this step: ${error}`).to.be.false;
@@ -125,11 +120,10 @@ Given(/^a request is made to comments endpoint with (.*) as (.*)$/, async  (key,
   try{
   let queryParam ={
     key: key,
-    value:value,
-  }
+    value:value
+  };
   apiResponse = await comments.getCommentsByParam(queryParam);
-}
-catch(e){
+} catch(e){
   error = e;
 }
 expect(error,`error thrown at this step: ${error}`).to.be.false;
