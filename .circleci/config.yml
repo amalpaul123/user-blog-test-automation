@@ -35,15 +35,13 @@ jobs:
         paths:
         - ~/.npm
     - run:
-        command: npm run test
-        name: Run NPM Tests
+        command: npm run regression-test
+        name: Run regression test
         working_directory: ~/project
     - run:
         command: npm run report-generator
-        name: Run NPM report generator
+        name: Run report generator
         working_directory: ~/project
-    - store_test_results:
-        path: /home/circleci/project/test/report/cucumber_report.json
     - store_artifacts:
         path: /home/circleci/project/test/report/cucumber_report.html
 workflows:
